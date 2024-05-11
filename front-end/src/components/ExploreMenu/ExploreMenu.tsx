@@ -3,8 +3,8 @@ import { menu_list } from '../../assets/assets'
 
 const ExploreMenu = () => {
   return (
-    <div className='explore-menu' id='explore'>
-        <h1>Explore our Menu</h1>
+    <div className='explore-menu' id='explore-menu'>
+        <h1>Explore Our Menu!</h1>
         <p className='explore-menu-text'>Choose from our menu featuring delectable array of food dishes. Our abbission is to satisfy your CRAVINGS!</p>
         <div className="explore-menu-list">
             {menu_list.map((item, index)=>{
@@ -16,6 +16,7 @@ const ExploreMenu = () => {
                 )
             })}
         </div>
+        <hr/>
     </div>
   )
 }
