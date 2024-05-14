@@ -1,7 +1,7 @@
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { assets } from '../../assets/assets'
-import './Fooditem.css'
 import { StoredContext } from '../../context/StoredContext'
+import './Fooditem.css'
 
 interface Props {
     id: number
@@ -12,7 +12,7 @@ interface Props {
 }
 const Fooditem = ({ id, name, price, image, description }: Props) => {
 
-    const [itemCount, setItemCount] = useState(0)
+
     const {cartItems, addToCart, removeFromCart}= useContext(StoredContext)
 
     return (
