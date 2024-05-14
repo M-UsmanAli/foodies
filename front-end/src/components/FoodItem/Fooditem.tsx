@@ -12,7 +12,7 @@ const Fooditem = ({ id, name, price, image, description }: Props) => {
     return (
         <div className='food-item'>
             <div className="food-item-img-container">
-                <img src={image} alt="" className="food-item-imgage" />
+                <img src={image} alt="" className="food-item-image" />
             </div>
             <div className="food-item-info">
                 <div className="food-item-name-rating">
